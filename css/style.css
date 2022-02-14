@@ -323,8 +323,12 @@ label {
 .main-menu ul li {
     margin-left: 50px;
     display: inline-block;
+    position: relative;
 }
-.main-menu ul li:first-child{
+.main-menu ul li:hover > a {
+    color: #ec6e39;
+}
+.main-menu ul li:first-child {
     margin-left: 0px;
 }
 .main-menu ul li a {
@@ -334,4 +338,34 @@ label {
     font-size: 12px;
     display: inline-block;
     padding: 30px 0px;
+}
+.main-menu ul li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+    top: 100%;
+}
+.main-menu ul li .submenu {
+    position: absolute;
+    background-color: #ffffff;
+    width: 230px;
+    padding: 15px 0px;
+    border-top: 3px solid #ec6e39;
+    top: 120%;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+.main-menu ul li .submenu li {
+    margin: 0px;
+    display: block;
+}
+.main-menu ul li .submenu li a {
+    color: #121121;
+    display: block;
+    padding: 10px 25px;
+}
+.main-menu ul li .submenu li:hover > a {
+    color: #ec6e39;
 }
