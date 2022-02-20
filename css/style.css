@@ -500,7 +500,8 @@ label {
     border-radius: 0;
     font-family: "Open Sans", sans-serif;
 }
-.f-faq .accordion-button.collapsed::after,.f-faq .accordion-button::after {
+.f-faq .accordion-button.collapsed::after,
+.f-faq .accordion-button::after {
     content: "\f067";
     right: 30px;
     font-size: 18px;
@@ -510,7 +511,42 @@ label {
     margin: 0;
     font-size: 15px;
 }
-
 .f-faq .accordion-button::after {
     content: "\f068";
+}
+
+/* event */
+.event-main {
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+}
+.event-btn {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+.event-content {
+    padding: 60px;
+}
+.event-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+
+.event-content span {
+    color: #ec6e39;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.event-content p {
+    font-size: 16px;
+    color: #686893;
+}
+.event-img img{
+    width: 100%;
+    height: 571px;
 }
