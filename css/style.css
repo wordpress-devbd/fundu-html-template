@@ -190,27 +190,6 @@ label {
 }
 /* button style */
 
-.btn {
-    -moz-user-select: none;
-    background: #1696e7 none repeat scroll 0 0;
-    border: medium none;
-    border-radius: 2px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 1;
-    margin-bottom: 0;
-    padding: 13px 25px;
-    text-align: center;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    transition: all 0.3s ease 0s;
-    vertical-align: middle;
-    white-space: nowrap;
-}
 .breadcrumb > .active {
     color: #888;
 }
@@ -265,6 +244,7 @@ label {
     left: 0;
     right: 0;
     top: 0;
+    z-index: 2;
 }
 
 .header-info-icon {
@@ -371,6 +351,19 @@ label {
 }
 
 /* slider  */
+.bg-overlay {
+    position: relative;
+}
+.bg-overlay:before {
+    content: "";
+    position: absolute;
+    background-color: #040415;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .hero-area {
     min-height: 1020px;
 }
@@ -440,7 +433,7 @@ label {
     position: relative;
 }
 .testimonial-content::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -15px;
     left: 50px;
@@ -477,4 +470,47 @@ label {
     text-transform: uppercase;
     font-weight: 700;
     color: #ffae00;
+}
+
+/* faq */
+
+.f-faq .card {
+    margin-bottom: 20px;
+}
+.f-faq .card-header {
+    background-color: transparent;
+    padding: 0px;
+    line-height: 1;
+}
+.f-faq .btn-link:hover {
+    color: #121121;
+    text-decoration: none;
+}
+.f-faq .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #686893;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.f-faq .accordion-button.collapsed::after,.f-faq .accordion-button::after {
+    content: "\f067";
+    right: 30px;
+    font-size: 18px;
+    color: #ec6e39;
+    font-family: "Font Awesome 5 Pro";
+    position: absolute;
+    margin: 0;
+    font-size: 15px;
+}
+
+.f-faq .accordion-button::after {
+    content: "\f068";
 }
