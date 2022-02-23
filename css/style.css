@@ -300,6 +300,7 @@ label {
     font-weight: 700;
     color: #ffffff;
     letter-spacing: 2px;
+    border: 2px solid transparent;
 }
 .main-menu ul li {
     margin-left: 50px;
@@ -711,4 +712,60 @@ label {
     padding: 20px 50px;
     cursor: pointer;
     text-transform: uppercase;
+}
+/* event down  */
+.up-event-box {
+    padding: 50px;
+}
+.up-date {
+    width: 160px;
+    height: 160px;
+    background-color: #ec6e39;
+    text-align: center;
+    padding-top: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+.up-date h2 {
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 700;
+}
+.up-date span {
+    font-size: 14px;
+    font-weight: 700;
+}
+.up-event-content {
+    padding-top: 5px;
+}
+.up-event-content i {
+    margin-right: 8px;
+}
+.up-event-content span {
+    font-size: 16px;
+    color: #8d8db4;
+    display: block;
+    margin-bottom: 12px;
+}
+.up-event-content h3 {
+    font-size: 36px;
+    color: #121121;
+    font-weight: 600;
+}
+.up-event-content p {
+    margin: 0;
+}
+.border-btn {
+    border-color: #e5e6ec;
+    background: none;
+    color: #bec1d4;
+    padding: 20px 50px;
+}
+.border-btn:hover {
+    background-color: #ec6e39;
+    border-color: #ec6e39;
+    color: #ffffff;
 }
