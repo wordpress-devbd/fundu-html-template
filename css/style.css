@@ -769,3 +769,31 @@ label {
     border-color: #ec6e39;
     color: #ffffff;
 }
+
+/* face */
+.single-fact {
+    border-right: 2px solid #232239;
+    padding: 100px 0px;
+}
+.single-fact img {
+    margin-bottom: 20px;
+}
+.single-fact h1 {
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.single-fact h1 span {
+    color: #ec6e39;
+    font-size: 30px;
+}
+.single-fact > span {
+    color: #67658d;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.face-parent .col-lg-3:last-child .single-fact {
+    border-right: 0px;
+}
