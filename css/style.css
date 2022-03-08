@@ -797,3 +797,32 @@ label {
 .face-parent .col-lg-3:last-child .single-fact {
     border-right: 0px;
 }
+
+/* latest blog */
+.news-content {
+    background-color: #ffffff;
+    padding: 40px;
+    padding-top: 35px;
+}
+.news-content span {
+    color: #ec6e39;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+}
+.news-content h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+   font-weight: 600;
+}
+.news-content p{
+    font-size: 14px;
+    color: #686893;
+}
+.read-more-icon a{
+    color: #ec6e39;
+    font-size: 16px;
+}
