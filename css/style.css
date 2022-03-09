@@ -338,6 +338,7 @@ label {
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    z-index: 8;
 }
 .main-menu ul li .submenu li {
     margin: 0px;
@@ -380,7 +381,7 @@ label {
     margin-bottom: 25px;
     display: inline-block;
     position: relative;
-    z-index: 99;
+    z-index: 1;
 }
 .hero-wrapper h2 {
     font-size: 80px;
@@ -562,7 +563,9 @@ label {
 .event-sm-img {
     position: relative;
 }
-
+.event-sm-img img{
+    width: 100%;
+}
 .event-date {
     position: absolute;
     background: #ec6e39;
@@ -601,6 +604,9 @@ label {
 }
 
 /* team  */
+.team-img img{
+    width: 100%;
+}
 .team-box {
     border: 2px solid #f6f6f6;
     padding: 20px;
@@ -794,7 +800,7 @@ label {
     font-weight: 600;
     text-transform: uppercase;
 }
-.face-parent .col-lg-3:last-child .single-fact {
+.face-parent .col-xl-3:last-child .single-fact {
     border-right: 0px;
 }
 
@@ -803,6 +809,9 @@ label {
     background-color: #ffffff;
     padding: 40px;
     padding-top: 35px;
+}
+.news-thumb img{
+    width:100%;
 }
 .news-content span {
     color: #ec6e39;
@@ -875,4 +884,7 @@ label {
 }
 .footer-social a:hover{
     color: #ec6e39;
+}
+.footer-line img{
+    width:100%;
 }
